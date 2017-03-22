@@ -1,0 +1,28 @@
+.nav {
+  &__list {
+    text-align: right;
+  }
+  &__link {
+    display: block;
+    padding: 10px 20px 10px 0;
+    color: #414141;
+    text-decoration: none;
+    border-right: 6px solid transparent;
+    font-size: 18px;
+    &:active {
+      color: #33c1e3;
+      border-color: #33c1e3;
+      font-weight: bold;
+    }
+    &:hover {
+      color: #33c1e3;
+    }
+  }
+  &__item_select &__link {
+    border-color: #33c1e3;
+  }
+  &__item_select * {
+    color: #33c1e3;
+    font-weight: bold;
+  }
+}

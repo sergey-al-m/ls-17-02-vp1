@@ -1,0 +1,100 @@
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+    width: 770px;
+    box-sizing: border-box;
+  }
+
+  .sidebar {
+    float: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .nav {
+    &__list {
+      text-align: left;
+    }
+    &__item {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 30px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    &__link {
+      padding: 0;
+      border: 0 none;
+    }
+    &__item_select &__link {
+      font-weight: bold;
+      color: #32c3e5;
+    }
+  }
+
+  .stuff {
+    float: none;
+    width: 100%;
+  }
+
+  .auth {
+    width: 345px;
+    &__top {
+      padding: 60px 60px 11px 60px;
+      margin-top: 90px;
+    }
+    &__avatar {
+      width: 102px;
+      height: 102px;
+      top: -50px;
+      //left: 50%;
+      margin-left: -50px;
+    }
+  }
+
+  .about {
+    &__left {
+      width: 31%;
+    }
+    &__right {
+      width: 57%;
+      margin-right: 65px;
+    }
+    &__ava img {
+      width: 170px;
+      height: 170px;
+    }
+    &__text {
+      height: 380px;
+    }
+  }
+
+  .career {
+    &__left {
+      width: 230px;
+    }
+    &__pic img {
+      min-width: 230px;
+      max-height: 230px;
+    }
+    &__right {
+      width: 355px;
+    }
+    &__block {
+      width: 355px;
+    }
+  }
+
+  .portfolio {
+    &__list {
+      margin-left: -3%;
+    }
+    &__item {
+      width: 30%;
+      margin-left: 3%;
+      margin-bottom: 25px;
+      margin-right: 2px;
+    }
+  }
+}

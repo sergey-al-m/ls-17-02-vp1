@@ -1,0 +1,23 @@
+.content {
+  &__title {
+    font-family: fira_sansmedium, Arial, sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+    color: #414141;
+    line-height: 38px;
+    margin-bottom: 24px;
+  }
+}
+
+.sidebar {
+  width: 23%;
+  float: left;
+}
+
+.stuff {
+  width: 74%;
+  float: right;
+}
+
+
+

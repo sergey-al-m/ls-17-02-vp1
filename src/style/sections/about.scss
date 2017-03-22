@@ -1,0 +1,63 @@
+.about {
+  &__left {
+    float: left;
+    width: 42%;
+    text-align: center;
+  }
+  &__right {
+    float: right;
+    width: 55%;
+  }
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  &__ava {
+    img {
+      display: block;
+      max-width: 220px;
+      max-height: 220px;
+    }
+    display: inline-block;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+  &__text {
+    height: 335px;
+    overflow: auto;
+    margin-bottom: 36px;
+    p {
+      color: #646464;
+      font-size: 18px;
+      line-height: 26px;
+      margin: 0 0 5px;
+    }
+  }
+  &__btns {
+    text-align: right;
+    &-download {
+      display: inline-block;
+      font-family: fira_sansbold, Arial, sans-serif;
+      font-size: 14px;
+      color: #e85f61;
+      text-decoration: none;
+      border: 2px solid #e85f61;
+      border-radius: 40px;
+      padding: 9px 12px;
+      & span {
+        display: inline-block;
+        margin-left: 5px;
+        letter-spacing: 1px;
+      }
+      &:hover {
+        color: #fff;
+        background: #e85f61;
+      }
+    }
+  }
+}
+
+
+

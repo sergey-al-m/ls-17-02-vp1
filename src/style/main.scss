@@ -1,0 +1,20 @@
+@import "layout/fonts";
+@import "../../bower_components/normalize-scss/sass/normalize";
+@include normalize();
+@import "layout/adjustment";
+
+@import "sections/header";
+@import "sections/sidebar";
+@import "sections/content";
+
+@import "sections/portfolio";
+@import "sections/career";
+@import "sections/about";
+@import "sections/auth";
+
+@import "sections/footer";
+
+@import "media/desktop";
+@import "media/laptop";
+@import "media/tablets";
+@import "media/phones";

@@ -1,0 +1,104 @@
+.career {
+  &__left {
+    width: 220px;
+    float: left;
+  }
+  &__pic {
+    border-radius: 9px;
+    overflow: hidden;
+    img {
+      display: block;
+      min-width: 220px;
+      max-height: 220px;
+    }
+  }
+  &__right {
+    width: 445px;
+    float: right;
+  }
+  &__item {
+    text-align: right;
+    font-size: 0;
+    margin-bottom: 20px;
+    &:first-child .career__block:before {
+      display: none;
+    }
+    &:last-child .career__block:after {
+      display: none;
+    }
+    &:hover {
+      * {
+        color: #fff;
+      }
+      .career__block {
+        background: #33c1e3;
+      }
+      .career__year {
+        color: #33c1e3;
+        font-weight: bold;
+      }
+      .career__year:after {
+        border-color: #94e0f2;
+      }
+    }
+  }
+  &__block {
+    position: relative;
+    width: 380px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 9px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    text-align: left;
+    padding: 15px;
+    &:after, &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1px;
+      background: #dddddd;
+      left: -20px;
+    }
+    &:before {
+      top: 0;
+      bottom: 50%;
+    }
+    &:after {
+      bottom: -22px;
+      top: 50%;
+    }
+  }
+  &__title {
+    font-size: 21px;
+    color: #5a5a5a;
+    margin-bottom: 5px;
+  }
+  &__occupation, &__date {
+    font-size: 18px;
+    font-family: fira_sanslight, Arial, sans-serif;
+  }
+  &__year {
+    position: absolute;
+    right: 100%;
+    font-size: 14px;
+    top: 50%;
+    margin-top: -8px;
+    margin-right: 34px;
+    color: #727272;
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 10px;
+      right: -25px;
+      top: 50%;
+      z-index: 1;
+      margin-top: -10px;
+      background: #33c1e3;
+      border: 5px solid #f6f6f6;
+      border-radius: 50%;
+    }
+  }
+}

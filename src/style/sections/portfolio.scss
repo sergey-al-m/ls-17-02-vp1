@@ -1,0 +1,54 @@
+.portfolio {
+  &__list {
+    margin-left: -12px;
+    font-size: 0;
+  }
+  &__item {
+    display: inline-block;
+    width: 220px;
+    border-radius: 10px 9px 9px 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    &:hover .portfolio__desc-title{
+      color: #e85f61;
+    }
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+  }
+  &__pic {
+    background-size: cover;
+    height: 172px;
+  }
+  &__desc {
+    background: #fff;
+    padding: 20px 20px 14px;
+    &-title {
+      font-family: fira_sansregular, Arial, sans-serif;
+      font-size: 21px;
+      color: #33c1e3;
+      line-height: 24px;
+      bottom: 5px;
+    }
+    &-text {
+      font-family: fira_sanslight, Arial, sans-serif;
+      color: #414141;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16px;
+      margin-bottom: 17px;
+    }
+    &-type {
+      font-size: 14px;
+      font-family: fira_sansbold, Arial, sans-serif;
+      color: #aeaeae;
+      i {
+        font-size: 18px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

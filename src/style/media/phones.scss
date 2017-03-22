@@ -1,0 +1,99 @@
+@media screen and (max-width: 480px) {
+  .container {
+    box-sizing: border-box;
+    width: 95%;
+    padding: 0;
+  }
+
+  .header {
+    margin-bottom: 12px;
+  }
+
+  .user__fio {
+    max-width: 150px;
+    font-size: 14px;
+    width: 56%;
+  }
+
+  .sidebar {
+    margin-bottom: 20px;
+  }
+
+  .nav {
+    &__list {
+      text-align: center;
+    }
+    &__item {
+      margin-left: 7%;
+    }
+    &__title {
+      font-size: 14px;
+    }
+    &__icon {
+      display: none;
+    }
+  }
+
+  .auth {
+    width: 300px;
+  }
+
+  .about {
+    &__ava img {
+      max-width: 140px;
+      max-height: 140px;
+    }
+    &__right {
+      width: 100%;
+    }
+    &__text p {
+      height: auto;
+      font-size: 16px;
+    }
+  }
+
+  .career {
+    &__left {
+      margin-top: 9px;
+    }
+    &__right {
+      width: 100%;
+    }
+    &__title {
+      font-size: 18px;
+    }
+    &__occupation, &__date {
+      font-size: 16px;
+    }
+    &__pic img {
+      width: 100%;
+    }
+  }
+
+  .portfolio {
+    &__list {
+      margin-left: 0;
+      text-align: center;
+    }
+    &__item {
+      margin-left: 0;
+      width: 300px;
+      text-align: left;
+    }
+    &__pic {
+      height: 234px;
+    }
+  }
+
+  $footer-height: 115px;
+  .wrapper:after {
+    height: $footer-height + 50px;
+  }
+  .footer {
+    height: $footer-height;
+    margin-top: $footer-height * -1;
+    &__right {
+      margin-top: 4px;
+    }
+  }
+}
